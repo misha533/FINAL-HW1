@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Homework 1: Tasks for ma1033</title>
+</head>
+
+<body>
+<h1>Homework 1: Tasks for ma1033</h1>
+
+<p>Your personal task is to develop a system for menus and their dishes.</p>
+
+<h2>Task 1: Configuration [4 marks]</h2>
+<p>Configure the project to support the use of JSPs as view technology. JSPs must be configured to be placed inside folder <code>src/main/webapp/WEB-INF/views/</code>.</p>
+
+<h2>Task 2: Domain Classes [13 marks]</h2>
+
+<p>Create class <code>co2123.hw1.domain.Dish</code>. With the following private fields:
+<ol>
+  <li><code>String name</code></li>
+  <li><code>String description</code></li>
+  <li><code>String dietary</code></li>
+  <li><code>int price</code></li>
+</ol>
+Generate necessary getters and setters. [7 marks]
+</p>
+
+<p>Create class <code>co2123.hw1.domain.Menu</code>. With the following private fields:
+<ol>
+  <li><code>int id</code></li>
+  <li><code>String type</code></li>
+  <li><code>String restaurant</code></li>
+  <li><code>List&lt;Dish&gt; dishes</code></li>
+</ol>
+Generate necessary getters and setters. [6 marks]
+</p>
+
+
+<h2>Task 3: Controller (simple) [5 marks]</h2>
+<p>Create controller <code>co2123.hw1.controller.MainController</code> [2 marks].
+<ol>
+  <li>Requests for URL <code>"/"</code> (POST and GET) should show the view <code>start</code> (the corresponding JSP already exists). [3 marks]</li>
+</ol>
+</p>
+
+<h2>Task 4: Controller, View, and Form [20 marks]</h2>
+
+<p>Create field <code>public static List&lt;Menu&gt; menus</code> in class <code>co2123.hw1.Hw1Application</code>. Initialize the list inside class <code>co2123.hw1.Hw1Application</code> to contain one menu with two dishes. [4 marks]</p>
+
+<p>Create controller <code>co2123.hw1.controller.MenuController</code> and add methods with request mappings for the following behavior:
+<ol>
+  <li>GET requests for URL <code>"/menus"</code> should show view <code>menus/list</code>. [2 marks]
+    <ul>
+      <li>Add the list of all menus from <code>co2123.hw1.Hw1Application</code> to the model as attribute <code>menus</code>. [2 marks]</li>
+      <li>Create the corresponding JSP to list the type and restaurant of each menu followed by a link to URL <code>"/dishes?menu={id of menu}"</code>, e.g., <code>"/dishes?menu=3"</code>. [4 marks]</li>
+    </ul>
+  </li>
+  <li>Requests for URL <code>"/newMenu"</code> should show view <code>menus/form</code>. [3 marks] Create the corresponding JSP with a form with <code>modelAttribute="menu"</code> and <code>action="/addMenu"</code> and inputs for all fields of class <code>Menu</code> except for <code>dishes</code>. [5 marks]</li>
+  <li>POST requests for URL <code>"/addMenu"</code> should add a new menu to the list of all menus in <code>co2123.hw1.Hw1Application</code> and redirect to <code>/menus</code>. [3 marks]</li>
+</ol>
+</p>
+
+<h2>Task 5: Controller, View, and Form with additional Parameter [33 marks]</h2>
+
+<p>Create controller <code>co2123.hw1.controller.DishController</code> and add methods with request mappings for the following behavior:
+<ol>
+  <li>GET requests for URL <code>"/dishes"</code> should show view <code>dishes/list</code>. [2 marks]
+    <ul>
+      <li>Based on request parameter <code>menu</code> determine the corresponding menu from <code>co2123.hw1.Hw1Application</code>. [2 marks]</li>
+      <li>Add the list of all dishes of that menu to the model as attribute <code>dishes</code>. [2 marks]</li>
+      <li>Create the corresponding JSP for the view to list the name, description, dietary, and price of each dish. [4 marks]</li>
+      <li>At the end of the list in the JSP add a link to URL <code>"/newDish?menu={id of menu whose dishes are listed}"</code>, e.g., <code>"/newDish?menu=3"</code>. [4 marks]</li>
+    </ul>
+  </li>
+  <li>Requests for URL <code>"/newDish"</code> should show view <code>dishes/form</code>. [3 marks]
+    <ul>
+      <li>Create the corresponding JSP with a form with <code>modelAttribute="dish"</code> and <code>action="/addDish"</code> and inputs for all fields of class <code>Dish</code>. [6 marks]</li>
+      <li>Also add the request parameter <code>menu</code> with the ID of the current menu. [4 marks]</li>
+    </ul>
+  </li>
+  <li>POST requests for URL <code>"/addDish"</code> should add a new dish to the list of dishes of the menu identified by request parameter <code>menu</code> and then redirect to <code>/menus</code>. [6 marks]</li>
+</ol>
+</p>
+
+<h2>Task 6: Validation [25 marks]</h2>
+
+<p>Set up a validator for class <code>Menu</code> and make it available in controller <code>MenuController</code>. [4 marks]</p>
+<p>When adding a new menu validate that
+  <ol>
+    <li>The value of field <code>id</code> is unique within the list <code>Hw1Application.menus</code>. [3 marks]</li>
+    <li>The value of field <code>type</code> is not empty. [2 marks]</li>
+    <li>The value of field <code>restaurant</code> is not empty. [2 marks]</li>
+  </ol>
+  In case of validation errors go back to the form and show error messages for each field in the form.
+</p>
+
+
+<p>Set up a validator for class <code>Dish</code> and make it available in controller <code>DishController</code>. [4 marks]</p>
+<p>When adding a new dish validate that
+  <ol>
+    <li>The value of field <code>name</code> is not empty. [2 marks]</li>
+    <li>The value of field <code>description</code> is not empty. [2 marks]</li>
+    <li>The value of field <code>dietary</code> is either <code>"Vegetarian"</code>, <code>"Vegan"</code>, or <code>"Lactose Free"</code>. [3 marks]</li>
+    <li>The value of field <code>price</code> is between (including) 15 and 50. [3 marks]</li>
+  </ol>
+  In case of validation errors go back to the form and show error messages for each field in the form.
+</p>
+
+</body>
+
+</html>

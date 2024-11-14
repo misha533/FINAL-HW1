@@ -1,0 +1,37 @@
+hash,intro,Parent,parents,parent,pf1,pf2,pf3,Child,children,child,cf1,cf2,cf3,v1,v2,v3,cf4,low,high
+1,Your personal task is to develop a system for shops and their products.,Shop,shops,shop,id,name,owner,Product,products,product,manufacturer,website,goods,Bread,Cake,Biscuits,price,5,40
+2,Your personal task is to develop a system for shops and their products.,Shop,shops,shop,id,industry,city,Product,products,product,supplier,instructions,produce,Fruit,Vegetable,Salad,weight,5,100
+3,Your personal task is to develop a system for shops and their products.,Shop,shops,shop,id,founder,headquarters,Product,products,product,tagline,manufacturer,goods,Pies,Pastries,Ice Cream,weight,2,1000
+4,Your personal task is to develop a system for shops and their products.,Shop,shops,shop,id,city,founder,Product,products,product,packaging,supplier,wares,Water,Juice,Smoothies,price,1,70
+5,Your personal task is to develop a system for malls and their shops.,Mall,malls,mall,id,owner,website,Shop,shops,shop,name,founder,industry,Technology,Sports,Leisure,revenue,20,40
+6,Your personal task is to develop a system for malls and their shops.,Mall,malls,mall,id,title,city,Shop,shops,shop,name,predecessor,industry,Clothes,Footwear,Jewellery,revenue,5,500
+7,Your personal task is to develop a system for malls and their shops.,Mall,malls,mall,id,name,city,Shop,shops,shop,boss,website,industry,Technology,Sports,Leisure,founded,1800,2024
+8,Your personal task is to develop a system for malls and their shops.,Mall,malls,mall,id,name,website,Shop,shops,shop,boss,headquarters,industry,Clothes,Footwear,Jewellery,founded,1950,2024
+9,Your personal task is to develop a system for hairdressers and their stylists.,Hairdresser,hairdressers,hairdresser,id,city,founder,Stylist,stylists,stylist,name,qualification,expertise,Bob cut,Bowl cut,Buzz cut,price,1,10
+10,Your personal task is to develop a system for hairdressers and their stylists.,Hairdresser,hairdressers,hairdresser,id,city,speciality,Stylist,stylists,stylist,name,skills,expertise,Undercut,Mullet,Perm,price,5,50
+11,Your personal task is to develop a system for hairdressers and their stylists.,Hairdresser,hairdressers,hairdresser,id,speciality,owner,Stylist,stylists,stylist,name,qualification,expertise,Bob cut,Bowl cut,Buzz cut,price,100,200
+12,Your personal task is to develop a system for hairdressers and their stylists.,Hairdresser,hairdressers,hairdresser,id,speciality,city,Stylist,stylists,stylist,name,skills,expertise,Undercut,Mullet,Perm,price,30,400
+13,Your personal task is to develop a system for universities and their researchers.,University,universities,university,id,motto,website,Researcher,researchers,researcher,name,lab,area,Algorithms,Creative Computing,Software Engineering,grade,6,9
+14,Your personal task is to develop a system for universities and their researchers.,University,universities,university,id,chancellor,campus,Researcher,researchers,researcher,name,group,area,Human Computer Interaction,Machine Learning,Theory,grade,7,10
+15,Your personal task is to develop a system for universities and their researchers.,University,universities,university,id,campus,motto,Researcher,researchers,researcher,role,lab,area,Human Computer Interaction,Machine Learning,Theory,salary,17,60
+16,Your personal task is to develop a system for universities and their researchers.,University,universities,university,id,website,chancellor,Researcher,researchers,researcher,role,group,area,Algorithms,Creative Computing,Software Engineering,salary,35,250
+17,Your personal task is to develop a system for gyms and their trainers.,Gym,gyms,gym,id,facilities,city,Trainer,trainers,trainer,name,qualification,expertise,Tai Chi,Pilates,Yoga,duration,30,60
+18,Your personal task is to develop a system for gyms and their trainers.,Gym,gyms,gym,id,facilities,website,Trainer,trainers,trainer,name,skills,expertise,Aqua,Circuit training,Dance fusion,duration,45,75
+19,Your personal task is to develop a system for gyms and their trainers.,Gym,gyms,gym,id,classes,city,Trainer,trainers,trainer,name,qualification,expertise,Barbell workout,Indoor cycling,Boxercise,duration,15,45
+20,Your personal task is to develop a system for gyms and their trainers.,Gym,gyms,gym,id,classes,website,Trainer,trainers,trainer,name,skills,expertise,Tai Chi,Pilates,Yoga,duration,45,60
+21,Your personal task is to develop a system for apartments and their tenants.,Apartment,apartments,apartment,id,owner,city,Tenant,tenants,tenant,name,job,type,Single,Ensuite,Studio,rent,125,180
+22,Your personal task is to develop a system for apartments and their tenants.,Apartment,apartments,apartment,id,owner,type,Tenant,tenants,tenant,name,course,role,Undergraduate,Postgraduate,Staff,rent,100,150
+23,Your personal task is to develop a system for apartments and their tenants.,Apartment,apartments,apartment,id,address,city,Tenant,tenants,tenant,name,profession,type,Single,Ensuite,Studio,contract,42,52
+24,Your personal task is to develop a system for apartments and their tenants.,Apartment,apartments,apartment,id,address,type,Tenant,tenants,tenant,name,department,role,Undergraduate,Postgraduate,Staff,contract,21,42
+25,Your personal task is to develop a system for markets and their stalls.,Market,markets,market,id,name,location,Stall,stalls,stall,type,owner,products,Fruit,Vegetables,Flowers,hours,12,20
+26,Your personal task is to develop a system for markets and their stalls.,Market,markets,market,id,name,owner,Stall,stalls,stall,type,location,products,Books,Magazines,Comics,hours,9,17
+27,Your personal task is to develop a system for markets and their stalls.,Market,markets,market,id,type,website,Stall,stalls,stall,type,location,sells,Clothes,Accessories,Shoes,rating,1,10
+28,Your personal task is to develop a system for markets and their stalls.,Market,markets,market,id,website,description,Stall,stalls,stall,type,owner,sells,Toys,Games,Antiques,rating,1,5
+29,Your personal task is to develop a system for arcades and their machines.,Arcade,arcades,arcade,id,name,email,Machine,machines,machine,manufacturer,type,genre,Racing,Sports,Adventure,score,1,5000
+30,Your personal task is to develop a system for arcades and their machines.,Arcade,arcades,arcade,id,name,website,Machine,machines,machine,tagline,supplier,genre,Platform,Puzzle,Rhythm,score,50,750
+31,Your personal task is to develop a system for arcades and their machines.,Arcade,arcades,arcade,id,email,facilities,Machine,machines,machine,name,supplier,genre,Racing,Sports,Adventure,rating,1,10
+32,Your personal task is to develop a system for arcades and their machines.,Arcade,arcades,arcade,id,facilities,location,Machine,machines,machine,manufacturer,tagline,genre,Platform,Puzzle,Rhythm,year,1980,2000
+33,Your personal task is to develop a system for menus and their dishes.,Menu,menus,menu,id,description,restaurant,Dish,dishes,dish,name,type,dietary,Vegetarian,Vegan,Lactose Free,price,5,15
+34,Your personal task is to develop a system for menus and their dishes.,Menu,menus,menu,id,description,chef,Dish,dishes,dish,name,type,dietary,Pescatarian,Gluten Free,Allergen Free,rating,1,5
+35,Your personal task is to develop a system for menus and their dishes.,Menu,menus,menu,id,type,restaurant,Dish,dishes,dish,name,description,dietary,Vegetarian,Vegan,Lactose Free,price,15,50
+36,Your personal task is to develop a system for menus and their dishes.,Menu,menus,menu,id,type,chef,Dish,dishes,dish,name,description,dietary,Pescatarian,Gluten Free,Allergen Free,rating,1,10
